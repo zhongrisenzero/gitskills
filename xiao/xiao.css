@@ -1,0 +1,15 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px"宋体",“Arial Narrow�?HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#2d374b;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+.container{background: darkgreen;width: 100%;height: 500px}
+.img-left img{margin-top:150px;float: left;opacity: 0;}
+.img-mid{width: 180px;height: 180px; display: table ; margin-left: auto;margin-right: auto;overflow:hidden;}
+.img-mid img{margin-top: 150px}
+.container:hover .img-left img { opacity: 1}
+.img-mid img:hover{transform: scale(1.1)}
