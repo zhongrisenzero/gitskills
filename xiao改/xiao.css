@@ -1,0 +1,47 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px"宋体",“Arial Narrow�HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#2d374b;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+.header{height: 50px;width: 100%}
+.container{background: darkgreen;width: 100%;height: 500px;position:relative ;}
+.img-left{position:relative;}
+.img-left img{margin-top:150px;float: left;margin-left: -200px}
+.img-mid{width:188px;
+    height: 188px;
+    float:right;
+    margin-right: 42%;
+    margin-top:120px;
+    background: url("source/back.png")no-repeat}
+
+.container:hover .img-left img {margin-left:0;
+    transition:all 2s ease }
+.img-mid:hover{animation:move 0.2s ease-in ;
+    animation-fill-mode :forwards}
+.img-mid img{margin-left: 65px;
+    margin-top: 60px;
+    display: none}
+.header div{width: 40px;
+    height: 40px;
+    border: #cd0200 solid 1px;border-radius: 50%;
+    background: #cd0200;float: left;margin-left: 30px;}
+.one{animation: scale 2s 0s infinite ease-in-out}
+.two{animation: scale 2s 1.25s infinite ease-in-out}
+.three{animation: scale 2s 1.8s infinite ease-in-out}
+.img-mid:hover img{display: block}
+@keyframes scale {0%{transform: scale(0)}
+    25%{transform: scale(1.0)
+    }
+    50%{transform: scale(0.5)
+    }
+75%{transform: scale(1.0)}
+    100%{transform: scale(0.5)}
+}
+@keyframes move {0%{background-size: 100%}
+    100%{background-size: 110%}
+
+}
