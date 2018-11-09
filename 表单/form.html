@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<form action="/login" method="post" id="form1" onsubmit="return ch()">
+    姓名：<input  type="text" id="username" name="username" onblur ="check()"/><span id="span">输入姓名</span><br><br>
+    年级：<input  id="grade" type="text"  onblur="grade1()"/><span id="span2">输入年级</span><br><br>
+    手机号码：<input id="numbers" type="text" onblur="num()" /><span id="span3">输入手机号码</span><br><br>
+    邮箱：<input  type="text" id="email" onblur="test()"/><span id="span4">输入邮箱</span><br><br>
+    自我介绍：<br>
+    <textarea name="txt" clos="20" rows="6" warp="virtual" id="self" onblur="len()"></textarea><span id="span5">上限100字</span><br><br>
+    <input id="button" type="button"  value="提交" onblur="yes()"/><br><br>
+
+</form>
+<script src="form.js" language="JavaScript" type="text/javascript"></script>
+
+
+
+</body>
+</html>
