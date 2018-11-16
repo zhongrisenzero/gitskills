@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#text{display:table;margin-top:200px;height:50px;width:600px;margin-left: auto;margin-right: auto;outline: none}
+
+ul{display: table;margin-right: auto;margin-left: auto;background: white ;width: 600px;height:200px;
+list-style: none}
+li{outline: rgb(235,235,235) solid 1px;}
+button{float: right;}
+#btn{width: 50px;display: table;margin-left: auto;margin-right: auto }
