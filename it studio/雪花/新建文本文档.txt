@@ -1,0 +1,61 @@
+
+$(document).ready(function () {
+    var can = document.getElementById("can");
+    var ctx = can.getContext("2d");
+    var wid = window.innerWidth;
+    var hei = window.innerHeight;
+    can.width = wid;
+    can.height = hei;
+
+    function Sn() {
+    }
+
+    Sn.prototype = function (x, y, r) {
+
+        x = Math.random() * wid,
+            y = Math.random() * hei,
+            r = 10 * Math.random() + 1,
+            function Fall() {
+            var s = Sn()
+            s.y += Math.random() * 5 + 1;
+            s.x += Math.random() * 5 + 1;
+            if (s.y > hei) {
+                s.y = 0;
+            }
+
+            if (s.x > wid) {
+                s.x = 0;
+
+            }
+
+        },
+
+        function Draw() {
+                ctx.clearRect(0, 0, wid, hei);
+                ctx.fillStyle = "white";
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.arc(x, y, r, 0, 2 * Math.PI, false);
+                ctx.fill();
+                Fall();
+                ctx.closePath();
+
+            }
+        setInterval(function (){Draw()}, 50)
+    }
+
+        var arr=[];
+        for(var i=0;i<100;i++)
+        { arr[i]=new Sn();
+
+        }
+
+
+
+
+
+
+
+
+
+})
